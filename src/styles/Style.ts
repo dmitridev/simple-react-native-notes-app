@@ -36,6 +36,9 @@ const style = {
     },
     icon: {
         alignSelf: 'flex-end'
+    },
+    note_modal: {
+        flex: 1
     }
 }
 

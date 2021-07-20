@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import NoteModal from './NoteModal';
 import NoteSimple from './NoteSimple';
-import { View, Text, StyleSheet } from 'react-native';
 
 
 export default function Note(props: any) {
@@ -11,5 +10,5 @@ export default function Note(props: any) {
     if (!open)
         return <NoteSimple note={note} setOpen={setOpen} />
     else
-        return (<NoteModal note={note} setOpen={setOpen} />)
+        return <NoteModal note={note} setOpen={setOpen} />
 }
