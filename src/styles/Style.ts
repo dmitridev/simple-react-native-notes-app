@@ -6,6 +6,11 @@ const style = {
         borderRadius: 30,
         height: 50
     },
+    folder_main: {
+        margin: 10,
+        borderRadius: 30,
+        height: 50,
+    },
     note_font: {
         fontSize: 30
     },
