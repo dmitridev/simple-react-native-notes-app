@@ -21,7 +21,7 @@ export default function Main(props: any) {
             justifyContent: 'space-around',
             padding: 10,
         }}>
-            <Icon name="plus" type="font-awesome" color="#001A72" />
+            <Icon name="plus" type="font-awesome" color="#001A72" onPress={() => props.navigation.navigate('AddNew')}/>
             <Icon name="folder" type="font-awesome" color={color} onPress={() => props.navigation.navigate('Folders')} />
             <Icon name="cog" type="font-awesome" color="#001A72" onPress={() => props.navigation.navigate('Settings')} />
         </View>

@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Folders from './src/components/Folders/Folders';
 import Notes from './src/components/Notes/Notes';
+import AddNew from './src/components/AddNew/AddNew';
 import Settings from './src/components/Settings/Settings';
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={Notes} options={options} />
+          <Stack.Screen name="AddNew" component={AddNew} options={options} />
           <Stack.Screen name="Folders" component={Folders} options={options} />
           <Stack.Screen name="Settings" component={Settings} options={options} />
         </Stack.Navigator>
